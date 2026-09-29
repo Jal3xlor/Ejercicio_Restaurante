@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <header class="Contenido-formulario">
+        <div class="logo-area">
+           <h1>Formulario de Contacto</h1>
+            <p>Restaurante El Catracho</p>
+
+        </div>
+         <div>
+            <li><span>Ubicados:</span></li>
+            <li><span>Boulevar Suyapa, frente al porton principal de la UNAH</span></li>
+            
+        </div>
+        <div>
+            <span>Pedidios: +504 2239-0000</span>
+        </div>
+
+    </header>
+    <!..Barra de navegacion semantica..>
+    <nav class="menu-navegacion">
+        <ul>
+           <li> <a href="main.html">Volver al Inicio</a></li>
+           <li><a href="nosotros.html">Nuestra Historia</a></li>
+           <li><a href="menu.html">Ver Menu</a></li>
+           
+        </ul>
+    </nav>
+    <main class="contenido">
+        <h2>Formulario de Contacto</h2>
+        <form action="contacto.php" method="post" enctype="multipart/form-data" >
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <div>
+                <label>Ingrese su nombre</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="ingrese su nombre y apellido" minlength="10" maxlength="10" >
+            </div>
+            <div>
+                <label>Ingrese su DNI</label>
+                <input type="text" name="DNI" id="DNI" required placeholder="ingrese su numero de identidad" minlength="13" maxlength="13" pattern="[0-9]{4}-[0-9]{4}-[0-9]{5}" >
+            </div>
+            <div>
+                <label>Ingrese su numero de telefono</label>
+                <input type="tel" name="Telefono" id="Telefono" required placeholder="ingrese su numero de telefono" minlength="11" maxlength="11" >
+            </div>
+            <div>
+                <label>Ingrese el asunto</label>
+                <input type="text" name="Asunto a tratar" id="asunto" required placeholder="ingrese el motivo para contactarnos" minlength="50" maxlength="100" >
+            </div>
+            <div>
+                <label>Ingrese su direccion</label>
+                <input type="text" name="direccion" id="direccion" required placeholder="ingrese su direccion" >
+            </div>
+            <div>
+                
+                <button type="submit" > Enviar</button>
+            </div>
+
+        </fieldset>
