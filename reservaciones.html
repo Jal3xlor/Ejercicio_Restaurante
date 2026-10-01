@@ -3,6 +3,8 @@
 <meta charset="UTF-8">
 <head>
     <title>RESTAURANTE EL HONDUREÑO | Comida Hondureña y mas</title>
+    <link rel="stylesheet" href="CSS/estilospag.css">
+</head>
 </head>
 <body>
     <header>
@@ -25,7 +27,50 @@
     </ul>
 </nav>
 <main>
-   
+   <h2>Formulario de Reservaciones/Cambiado con mayores cosas</h2>
+        <p>Llene el siguiente formulario con los datos requeridos</p>
+
+        <form class="fomularioss" action="afiliados.php" method="POST" enctype="multipart/form-data">//mismo metodo siempre y la encriptacion igual
+            <fieldset>
+                <legendn class="doni">Datos Personales</legend>
+
+                <div>
+                    <label class="dino">Ingrese su nombre</label>
+                    <input type="text" name="nombre" id="nombre" required minlength="6" maxlength="100" placeholder="Ingrese sumnombre y apellido"></input>
+                </div>
+
+                <div>
+                    <label class="dino">Ingrese su DNI</label>
+                    <input type="text" name="dni" id="dni" required minlength="15" maxlength="15" pattern="[0-9][4]-[0-9][4]-[0-9][5]" placeholder="Ingrese DNI"></input>
+                </div>
+                <div>
+                    <label class="dino">Ingrese su Numero de Telefono</label>
+                    <input type="tel" name="telefono" id="telefono" required minlength="11" maxlength="11" placeholder="Ingrese su numero de telefono"></input>
+                </div>
+                <div>
+                    <label class="dino">Ingrese su Fecha de Nacimiento</label>
+                    <input type="date" name="fechaNacimiento" id="fechaNacimiento" required min="1945-01-01" max="2008-01-01" placeholder="Ingrese fecha de Nacimiento"></input>
+                </div>
+                <div>
+                    <label class="dino">Ingrese su Direccion</label> placeholder="Ingrese su Direccion de vivienda"></input>
+                </div>
+            </fieldset>
+             <fieldset>
+                <legend>Preferencia de compra</legend>
+
+                <div>
+                    <label>Seleccione</label>
+                    <input id="Sucursal" name=""></input>
+                    <option selected>Blvd. Moraznan</option>
+                    <option>City Mall</option>
+                    <option>Mall Premieter</option>
+                </div>
+
+                <div>
+            
+            </fieldset>
+
+        </form>
 </main>
 </body>
 
